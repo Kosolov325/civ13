@@ -2,7 +2,7 @@ var/list/gamemode_cache = list()
 
 /datum/configuration
 
-	var/server_name = null				// server name (for world name / status)
+	var/server_name = "Panela Wars 13"				// server name (for world name / status)
 	var/server_suffix = FALSE				// generate numeric suffix based on server port
 
 	var/list/lobby_screens = list("1") // Which lobby screens are available
