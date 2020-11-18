@@ -1,6 +1,6 @@
 <h2><small><span style = "font-size: 1.20em;">Welcome to <b><span style = "font-size: 1.20em;">Panela Wars 13<span style = "color: #CD4C6C"> - Beta Edition</span></span></b></span></small></h2>
 <i>
-O mapa atual é<b>{server_map}</b>.
+Mapa atual: <b>{server_map}</b>.
 <br>
 This server is running {server_version}, and you are running {client_version}.
 <h2>REGRAS: https://discord.gg/ZrtbdXcZGb</h2>

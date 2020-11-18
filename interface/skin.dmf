@@ -781,7 +781,7 @@ window "infowindow"
 window "rpane"
 	elem "rpane"
 		type = MAIN
-		pos = 372,0
+		pos = 281,0
 		size = 420x457
 		anchor1 = none
 		anchor2 = none
@@ -793,6 +793,8 @@ window "rpane"
 		can-minimize = false
 		can-resize = false
 		is-pane = true
+		outer-size = 434x471
+		inner-size = 420x457
 	elem "rpanewindow"
 		type = CHILD
 		pos = 0,0
@@ -817,7 +819,7 @@ window "rpane"
 		text-color = #e1e1d7
 		background-color = #271a0c
 		saved-params = ""
-		text = "Civilization 13"
+		text = "Panela Wars 13"
 
 window "text_editor"
 	elem "text_editor"
