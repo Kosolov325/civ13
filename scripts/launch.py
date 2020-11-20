@@ -22,7 +22,7 @@ print("Updating git...")
 
 os.chdir("{}civ13-git".format(mdir))
 os.system("sudo git pull")
-os.system("sudo git reset --hard main")
+os.system("sudo git reset --hard origin/master")
 
 print("Rebuilding binaries...")
 
@@ -49,4 +49,4 @@ t2 = time.time() - t1
 print("Finished updating all directories in {} seconds".format(t2))
 
 print("Started server on port {}.".format(port))
-os.system("sudo screen -m -d -S server1 DreamDaemon {}{}civ13.dmb {} -trusted -logself  -invisible &".format(mdir,cdir,port))
+os.system("sudo screen -m -d -S server1 DreamDaemon {}{}civ13.dmb {} -trusted -logself &".format(mdir,cdir,port))

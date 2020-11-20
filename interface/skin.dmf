@@ -721,14 +721,16 @@ window "outputwindow"
 window "browserwindow"
 	elem "browserwindow"
 		type = MAIN
-		pos = 372,0
+		pos = 281,0
 		size = 640x480
 		anchor1 = none
 		anchor2 = none
+		background-color = none
 		saved-params = "pos;size;is-minimized;is-maximized"
 		title = "Browser"
 		statusbar = false
 		is-pane = true
+		outer-size = 656x519
 	elem "browser"
 		type = BROWSER
 		pos = 0,0
@@ -744,7 +746,7 @@ window "browserwindow"
 window "infowindow"
 	elem "infowindow"
 		type = MAIN
-		pos = 372,0
+		pos = 281,0
 		size = 420x477
 		anchor1 = none
 		anchor2 = none
@@ -757,6 +759,8 @@ window "infowindow"
 		can-minimize = false
 		can-resize = false
 		is-pane = true
+		outer-size = 434x491
+		inner-size = 420x477
 	elem "info"
 		type = INFO
 		pos = 0,24
@@ -819,7 +823,7 @@ window "rpane"
 		text-color = #e1e1d7
 		background-color = #271a0c
 		saved-params = ""
-		text = "Panela Wars 13"
+		text = "Panela Wars"
 
 window "text_editor"
 	elem "text_editor"

@@ -8,12 +8,20 @@
 *.log
 
 data/*
+SQL/*
 serverdata.txt
 
 
 
 .DS_Store
+config/host.txt
+config/host.txt
+config/host.txt
+config/host.txt
 recipes.txt
+config/host.txt
+config/host.txt
+config/host.txt
 .vscode/launch.json
 cfg/admin.txt
 nullobj.txt

@@ -109,7 +109,7 @@ CHECK_RANDOMIZER
 #IPINTEL_DOMAIN check.getipintel.net
 
 ## Uncomment to allow web client connections
-#ALLOW_WEBCLIENT
+ALLOW_WEBCLIENT
 
 ## Uncomment to restrict web client connections to byond members
 ## This makes for a nice pay gate to cut down on ban evading, as the webclient's cid system isn't that great
@@ -127,22 +127,22 @@ USE_JOB_WHITELIST
 SERVER 192.210.161.174:23999
 
 ## donation address
-DONATIONURL #https://www.patreon.com/1713ad
+DONATIONURL https://www.patreon.com/1713ad
 
 ## rules address
-RULESURL #http://civ13.com/wiki/index.php?title=Rules
+RULESURL https://discord.gg/vFNEXh3VaT
 
 ## discord address
-DISCORDURL https://discord.gg/ZrtbdXcZGb
+DISCORDURL https://discord.gg/vFNEXh3VaT
 
 ## Wiki address
 WIKIURL https://civ13.github.io/civ13-wiki/
 
 ## Website address
-WEBSITEURL #http://civ13.com/
+WEBSITEURL https://discord.gg/vFNEXh3VaT
 
 ##Github address
-GITHUBURL #https://github.com/civ13/civ13/
+GITHUBURL https://github.com/civ13/civ13/
 
 ##Github repo id
 ##This can be found by going to https://api.github.com/users/<user name here>/repos
@@ -150,7 +150,7 @@ GITHUBURL #https://github.com/civ13/civ13/
 # GITHUBREPOID 3234987
 
 ## Ban appeals URL - usually for a forum or wherever people should go to contact your admins.
-BANAPPEALS https://discord.gg/ZrtbdXcZGb
+# BANAPPEALS https://discord.gg/hBEtg4x
 
 ## Remove the # to show a popup 'reply to' window to every non-admin that recieves an adminPM.
 ## The intention is to make adminPMs more visible. (although I fnd popups annoying so this defaults to off)

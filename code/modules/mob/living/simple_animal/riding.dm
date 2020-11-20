@@ -52,7 +52,7 @@
 				visible_message("<div class='danger'>[M] gets out of \the [src].</div>","<div class='danger'>You get out of \the [src].</div>")
 				M.riding = FALSE
 				M.riding_mob = null
-				M.forceMove(locate(x+1,y,z))
+				M.forceMove(locate(x,y,z))
 				ride = FALSE
 				rider = null
 				M.pixel_x = 0
@@ -66,7 +66,7 @@
 				visible_message("<div class='danger'>[M] pulls [rider] from \the [src]!</div>","<div class='danger'>You pull [rider] from \the [src]!</div>")
 				rider.riding = FALSE
 				rider.riding_mob = null
-				rider.forceMove(locate(x+1,y,z))
+				rider.forceMove(locate(x,y,z))
 				rider.SpinAnimation(5,1)
 				rider.Weaken(5)
 				ride = FALSE
@@ -85,7 +85,7 @@
 		visible_message("<div class='danger'>[rider] falls from \the [src]!</div>","<div class='danger'>You fall from \the [src]!</div>")
 		rider.riding = FALSE
 		rider.SpinAnimation(5,1)
-		rider.forceMove(locate(x+1,y,z))
+		rider.forceMove(locate(x,y,z))
 		rider.Weaken(5)
 		ride = FALSE
 		rider.pixel_x = 0
