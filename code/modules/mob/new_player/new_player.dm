@@ -375,7 +375,6 @@ var/global/redirect_all_players = null
 		AttemptLateSpawn("Nomad")
 		return TRUE
 
-
 	if (href_list["late_join"])
 
 		if (client && client.quickBan_isbanned("Playing"))
