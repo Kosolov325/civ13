@@ -29,7 +29,7 @@
 		H << "This item has no research value."
 		return
 	if (map.age1_done == FALSE)
-		if (world.time < 12000 && map.custom_civs[H.civilization][1]+map.custom_civs[H.civilization][2]+map.custom_civs[H.civilization][3] >= (19*3))
+		if (world.time < 36000 && map.custom_civs[H.civilization][1]+map.custom_civs[H.civilization][2]+map.custom_civs[H.civilization][3] >= (19*3))
 			H << "You are already too advanced. You can research again in [(12000-world.time)/600/60] hours."
 			return
 	else if (map.age1_done == TRUE && map.age2_done == FALSE)
