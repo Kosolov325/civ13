@@ -59,12 +59,12 @@
 		overpopulationCountdown--
 		return
 
-	if (!pregnant && bear_count < 10)
+	if (!pregnant && bear_count < 4)
 		var/nearbyObjects = range(1,src) //3x3 area around animal
 		for(var/mob/living/simple_animal/hostile/bear/M in nearbyObjects)
 			if (M.stat == CONSCIOUS && !M.female)
 				pregnant = TRUE
-				birthCountdown = 800 // life ticks once per 2 seconds, 300 == 10 minutes
+				birthCountdown = 450 // life ticks once per 2 seconds, 300 == 10 minutes
 				break
 
 		if (pregnant)
@@ -76,14 +76,14 @@
 					bearCount++
 
 
-			if (bearCount > 2) // max 5 cows/bulls in a 15x15 area around
+			if (bearCount > 3) // max 5 cows/bulls in a 15x15 area around
 				overpopulationCountdown = 450 // 5 minutes
 				pregnant = FALSE
 	else if (pregnant)
 		birthCountdown--
 		if (birthCountdown <= 0)
 			pregnant = FALSE
-			if (prob(60))
+			if (prob(50))
 				var/mob/living/simple_animal/hostile/bear/boar/C = new/mob/living/simple_animal/hostile/bear/boar(loc)
 				C.cub = TRUE
 				C.btype = btype
