@@ -32,8 +32,10 @@ var/list/nonbreaking_types = list(
 	else
 		keyslot = new()
 
-	health = 300
+	health = 1000
 	initial_health = health
+
+
 
 	if (istype(src, /obj/structure/simple_door/key_door/anyone/shoji))
 		health = 50
@@ -57,7 +59,7 @@ var/list/nonbreaking_types = list(
 			Open()
 
 /obj/structure/simple_door/key_door/custom/New(_loc, _material = null)
-	health = 600
+	health = 1000
 	initial_health = health
 	material = "iron"
 

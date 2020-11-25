@@ -2,4 +2,4 @@
 mdir:C:/civ/
 cdir:civ13/
 port:7240
-byond_dir:C:/Program Files (x86)/BYOND
+byond_dir:C:/Program Files (x86)/BYOND/

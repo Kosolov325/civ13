@@ -64,7 +64,7 @@
 			modif += 0.3
 		if (choice == "Industry")
 			user << "<span class='notice'>You begin to transpose your knowledge to the [name].</span>"
-			if (do_after(user, (300*(user.getStatCoeff("crafting")))/modif, src))
+			if (do_after(user, (150*(user.getStatCoeff("crafting")))/modif, src))
 				user << "<span class='notice'>You finish the [name].</span>"
 				user.adaptStat("philosophy", 1)
 				k_class = "industry"
@@ -86,7 +86,7 @@
 
 		if (choice == "Anatomy")
 			user << "<span class='notice'>You begin to transpose your knowledge to the [name].</span>"
-			if (do_after(user, (300*((user.getStatCoeff("dexterity")+user.getStatCoeff("strength"))))/modif, src))
+			if (do_after(user, (150*((user.getStatCoeff("dexterity")+user.getStatCoeff("strength"))))/modif, src))
 				user << "<span class='notice'>You finish the [name].</span>"
 				user.adaptStat("philosophy", 1)
 				k_class = "anatomy"
@@ -124,7 +124,7 @@
 
 		if (choice == "Archery")
 			user << "<span class='notice'>You begin to transpose your knowledge to the [name].</span>"
-			if (do_after(user, (300*(user.getStatCoeff("bows")))/modif, src))
+			if (do_after(user, (150*(user.getStatCoeff("bows")))/modif, src))
 				user << "<span class='notice'>You finish the [name].</span>"
 				user.adaptStat("philosophy", 1)
 				k_class = "archery"
@@ -143,7 +143,7 @@
 
 		if (choice == "Gunpowder")
 			user << "<span class='notice'>You begin to transpose your knowledge to the [name].</span>"
-			if (do_after(user, (300*((user.getStatCoeff("pistol")+user.getStatCoeff("rifle"))))/modif, src))
+			if (do_after(user, (150*((user.getStatCoeff("pistol")+user.getStatCoeff("rifle"))))/modif, src))
 				user << "<span class='notice'>You finish the [name].</span>"
 				user.adaptStat("philosophy", 1)
 				k_class = "gunpowder"
@@ -162,7 +162,7 @@
 
 		if (choice == "Medicine")
 			user << "<span class='notice'>You begin to transpose your knowledge to the [name].</span>"
-			if (do_after(user, (300*(user.getStatCoeff("medical")))/modif, src))
+			if (do_after(user, (150*(user.getStatCoeff("medical")))/modif, src))
 				user << "<span class='notice'>You finish the [name].</span>"
 				user.adaptStat("philosophy", 1)
 				k_class = "medicine"
@@ -181,7 +181,7 @@
 
 		if (choice == "Philosophy")
 			user << "<span class='notice'>You begin to transpose your knowledge to the [name].</span>"
-			if (do_after(user, (300*(user.getStatCoeff("philosophy")))/modif, src))
+			if (do_after(user, (150*(user.getStatCoeff("philosophy")))/modif, src))
 				user << "<span class='notice'>You finish the [name].</span>"
 				user.adaptStat("philosophy", 1)
 				k_class = "philosophy"
@@ -281,7 +281,7 @@
 			return
 		else
 			var/current_tribesmen = 0
-			var/studytime = 300*k_level
+			var/studytime = 150*k_level
 			var/modif = 1
 			if (user.religion_check() == "Knowledge")
 				modif += 0.25

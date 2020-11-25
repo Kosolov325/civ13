@@ -28,7 +28,8 @@ os.system("git reset --hard origin/master")
 
 print("Rebuilding binaries...")
 
-os.system("{}/bin/dm.exe civ13.dme".format(byonddir))
+os.chdir("{}/bin/".format(byonddir))
+os.system("dm.exe civ13.dme")
 
 os.system("cd")
 
@@ -51,4 +52,6 @@ t2 = time.time() - t1
 print("Finished updating all directories in {} seconds".format(t2))
 
 print("Started server on port {}.".format(port))
-os.system("{}/bin/dreamdaemon.exe {}{}civ13.dmb {} -trusted -logself -webclient".format(byonddir,mdir,cdir,port))
+os.chdir("{}/bin/".format(byonddir))
+os.system("dreamdaemon.exe {}{}civ13.dmb {} -trusted -logself -webclient".format(mdir,cdir,port))
+
